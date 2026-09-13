@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .header-panel {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .header-panel h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center; /* Center the title */
+    }
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Reduced gap for better fit */
+      margin-top: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      justify-content: center; /* Center align items */
+    }
+    .info-item {
+      flex: 0 1 auto; /* Allow items to shrink if needed */
+      min-width: 180px; /* Reduced min-width for better fit */
+      padding: 5px;
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+    .info-item label {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-right: 5px;
+    }
+    .info-item span {
+      color: #333;
+    }
+    .info-item .running-jobs {
+      color: #ffff00; /* Yellow for Running Jobs */
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    .metrics {
+      margin-top: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+    .metrics table {
+      width: 60%;
+      border-collapse: collapse;
+    }
+    .metrics th, .metrics td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      font-size: 15px;
+    }
+    .metrics th {
+      background-color: #e0e0e0;
+      color: black;
+    }
+    .metrics tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+    .metrics tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+<div class="header-panel">
+  <h2>Backup Job Summary Report - All Instances</h2>
+</div>
+<div class="info-section">
+  <div class="info-item"><label>Generated:</label><span>Sun Sep 13 03:00:16 IST 2026</span></div>
+  <div class="info-item"><label>Host:</label><span>orarestoredb</span></div>
+  <div class="info-item"><label>Processed Instances:</label><span>15</span></div>
+  <div class="info-item"><label>Failed Instances:</label><span>1</span></div>
+  <div class="info-item"><label>Running Jobs:</label><span class="running-jobs">0</span></div>
+</div>
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Agent / Instance</th>
+    <th>Backup Set / Subclient</th>
+    <th>Storage Policy (CommCell)</th>
+    <th>Type</th>
+    <th>Start Time</th>
+    <th>End Time or Current Phase</th>
+    <th>Size of Application (Compression Rate)</th>
+    <th>Data Transferred</th>
+    <th>Estimated Media Space</th>
+    <th>Space Saving Percentage</th>
+    <th>Data Size Change</th>
+    <th>Transfer Time (GB/Hour)</th>
+    <th>Throughput (GB/Hour) (Current)</th>
+    <th>Protected Objects</th>
+    <th>Failed Objects</th>
+    <th>Failed Folder</th>
+  </tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: VITHAL</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:45:18</td><td>09/13/2026 00:29:25</td><td>25.98 GB (13.25%)</td><td>3441.92 GB</td><td>25.98 GB</td><td>99.25%</td><td>-.28%</td><td>0:44:07</td><td>4681.12 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:45:14</td><td>09/12/2026 00:19:30</td><td>22.34 GB (15.32%)</td><td>3421.89 GB</td><td>22.34 GB</td><td>99.35%</td><td>-.86%</td><td>0:34:16</td><td>5991.64 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:45:17</td><td>09/11/2026 00:24:49</td><td>24.74 GB (13.85%)</td><td>3426.04 GB</td><td>24.74 GB</td><td>99.28%</td><td>-.74%</td><td>0:39:32</td><td>5199.73 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:45:16</td><td>09/10/2026 00:24:35</td><td>30.2 GB (11.38%)</td><td>3438.01 GB</td><td>30.2 GB</td><td>99.12%</td><td>-.39%</td><td>0:39:19</td><td>5246.64 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:45:17</td><td>09/09/2026 00:28:37</td><td>31.26 GB (11.02%)</td><td>3445.33 GB</td><td>31.26 GB</td><td>99.09%</td><td>-.18%</td><td>0:43:20</td><td>4770.45 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:45:20</td><td>09/08/2026 00:26:16</td><td>30.68 GB (11.23%)</td><td>3444.1 GB</td><td>30.68 GB</td><td>99.11%</td><td>-.21%</td><td>0:40:56</td><td>5048.35 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>vitthaldp222</td><td>vithal</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 19:20:32</td><td>09/06/2026 22:42:14</td><td>832.38 GB (.41%)</td><td>3426.73 GB</td><td>832.38 GB</td><td>75.71%</td><td>-.72%</td><td>3:21:42</td><td>1019.35 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: EAGLE</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:40:05</td><td>09/13/2026 01:01:44</td><td>6.71 GB (21.48%)</td><td>1441.21 GB</td><td>6.71 GB</td><td>99.53%</td><td>-6.86%</td><td>1:21:39</td><td>1059.06 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 22:00:10</td><td>09/11/2026 23:27:42</td><td>431.29 GB (.34%)</td><td>1460.74 GB</td><td>431.29 GB</td><td>70.47%</td><td>-5.6%</td><td>1:27:32</td><td>1001.27 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:40:05</td><td>09/11/2026 01:13:37</td><td>13.66 GB (10.61%)</td><td>1449.43 GB</td><td>13.66 GB</td><td>99.06%</td><td>-6.33%</td><td>1:33:32</td><td>929.78 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:40:06</td><td>09/10/2026 01:15:23</td><td>21.58 GB (6.78%)</td><td>1464.21 GB</td><td>21.58 GB</td><td>98.53%</td><td>-5.37%</td><td>1:35:17</td><td>922.01 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:40:05</td><td>09/09/2026 01:28:52</td><td>51.55 GB (3%)</td><td>1547.32 GB</td><td>51.55 GB</td><td>96.67%</td><td>4.34%</td><td>1:48:47</td><td>853.43 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:40:05</td><td>09/08/2026 01:14:51</td><td>24.83 GB (5.94%)</td><td>1475.46 GB</td><td>24.83 GB</td><td>98.32%</td><td>-.51%</td><td>1:34:46</td><td>934.17 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>eagle</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:40:08</td><td>09/07/2026 01:17:08</td><td>5.74 GB (25.04%)</td><td>1438.4 GB</td><td>5.74 GB</td><td>99.6%</td><td>-3.01%</td><td>1:36:60</td><td>889.73 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: SHIVAY</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 22:30:08</td><td>09/13/2026 01:36:28</td><td>816.57 GB (.39%)</td><td>3204.14 GB</td><td>816.57 GB</td><td>74.52%</td><td>-1.5%</td><td>3:06:20</td><td>1031.74 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:45:11</td><td>09/12/2026 01:17:23</td><td>31.38 GB (10.21%)</td><td>3203.3 GB</td><td>31.38 GB</td><td>99.02%</td><td>-1.52%</td><td>1:32:12</td><td>2084.57 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:45:14</td><td>09/11/2026 01:44:00</td><td>38.57 GB (8.3%)</td><td>3202.07 GB</td><td>38.57 GB</td><td>98.8%</td><td>-1.56%</td><td>1:58:46</td><td>1617.66 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:45:25</td><td>09/10/2026 01:43:51</td><td>38.72 GB (8.29%)</td><td>3212.02 GB</td><td>38.72 GB</td><td>98.79%</td><td>-1.25%</td><td>1:58:26</td><td>1627.25 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:45:11</td><td>09/09/2026 01:50:39</td><td>42.48 GB (7.6%)</td><td>3230.45 GB</td><td>42.48 GB</td><td>98.68%</td><td>-.69%</td><td>2:05:28</td><td>1544.85 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:45:18</td><td>09/08/2026 01:46:05</td><td>49.7 GB (6.53%)</td><td>3243.46 GB</td><td>49.7 GB</td><td>98.47%</td><td>-.29%</td><td>2:00:47</td><td>1611.21 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb2</td><td>shivay</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:45:20</td><td>09/07/2026 01:44:11</td><td>23.57 GB (13.54%)</td><td>3192.56 GB</td><td>23.57 GB</td><td>99.26%</td><td>-1.85%</td><td>1:58:51</td><td>1611.72 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: VISHNU</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:45:09</td><td>09/13/2026 01:02:54</td><td>9.36 GB (32.86%)</td><td>3077.27 GB</td><td>9.36 GB</td><td>99.7%</td><td>-7.56%</td><td>1:17:45</td><td>2374.74 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 21:30:17</td><td>09/11/2026 23:59:54</td><td>694.97 GB (.44%)</td><td>3074.09 GB</td><td>694.97 GB</td><td>77.39%</td><td>-7.66%</td><td>2:29:37</td><td>1232.79 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:45:13</td><td>09/11/2026 01:00:46</td><td>5.9 GB (52%)</td><td>3067.38 GB</td><td>5.9 GB</td><td>99.81%</td><td>-7.86%</td><td>1:15:33</td><td>2436.04 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:45:15</td><td>09/10/2026 01:01:07</td><td>6.19 GB (49.56%)</td><td>3067.95 GB</td><td>6.19 GB</td><td>99.8%</td><td>-7.84%</td><td>1:15:52</td><td>2426.33 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:45:07</td><td>09/09/2026 01:02:51</td><td>10.54 GB (29.19%)</td><td>3076.48 GB</td><td>10.54 GB</td><td>99.66%</td><td>-7.59%</td><td>1:17:44</td><td>2374.64 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:45:08</td><td>09/08/2026 01:03:51</td><td>11.16 GB (27.61%)</td><td>3080.69 GB</td><td>11.16 GB</td><td>99.64%</td><td>-7.46%</td><td>1:18:43</td><td>2348.18 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>racdb1</td><td>vishnu</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:45:05</td><td>09/07/2026 01:02:58</td><td>13.61 GB (22.58%)</td><td>3072.76 GB</td><td>13.61 GB</td><td>99.56%</td><td>-7.7%</td><td>1:17:53</td><td>2367.2 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: MARCOS</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:30:10</td><td>09/13/2026 01:05:07</td><td>26.37 GB (8.72%)</td><td>2300.83 GB</td><td>26.37 GB</td><td>98.85%</td><td>-.88%</td><td>1:34:57</td><td>1453.92 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:30:14</td><td>09/12/2026 01:01:12</td><td>20.95 GB (10.93%)</td><td>2288.65 GB</td><td>20.95 GB</td><td>99.08%</td><td>-1.41%</td><td>1:30:58</td><td>1509.55 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:30:23</td><td>09/11/2026 01:02:10</td><td>21.04 GB (10.88%)</td><td>2289.72 GB</td><td>21.04 GB</td><td>99.08%</td><td>-1.36%</td><td>1:31:47</td><td>1496.82 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 21:30:22</td><td>09/09/2026 23:38:16</td><td>522.16 GB (.44%)</td><td>2297.57 GB</td><td>522.16 GB</td><td>77.27%</td><td>-1.02%</td><td>2:07:54</td><td>1077.83 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:30:26</td><td>09/09/2026 01:09:45</td><td>29.81 GB (7.75%)</td><td>2311.54 GB</td><td>29.81 GB</td><td>98.71%</td><td>-.42%</td><td>1:39:19</td><td>1396.46 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:30:22</td><td>09/08/2026 00:55:19</td><td>33.83 GB (6.86%)</td><td>2321.3 GB</td><td>33.83 GB</td><td>98.54%</td><td>.18%</td><td>1:24:57</td><td>1639.53 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>brahmos</td><td>marcos</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:30:17</td><td>09/07/2026 01:05:24</td><td>35.27 GB (6.52%)</td><td>2298.98 GB</td><td>35.27 GB</td><td>98.47%</td><td>-.78%</td><td>1:35:07</td><td>1450.21 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: VIKRAM</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:55:14</td><td>09/13/2026 01:49:42</td><td>182.52 GB (1.21%)</td><td>2200.43 GB</td><td>182.52 GB</td><td>91.71%</td><td>-1.21%</td><td>1:54:28</td><td>1153.4 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:55:09</td><td>09/12/2026 01:46:38</td><td>177.24 GB (1.23%)</td><td>2175.02 GB</td><td>177.24 GB</td><td>91.85%</td><td>-2.35%</td><td>1:51:29</td><td>1170.59 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:55:21</td><td>09/11/2026 01:39:05</td><td>168.71 GB (1.28%)</td><td>2165.32 GB</td><td>168.71 GB</td><td>92.21%</td><td>-2.78%</td><td>1:43:44</td><td>1252.43 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:55:11</td><td>09/10/2026 01:27:38</td><td>152.11 GB (1.41%)</td><td>2142.71 GB</td><td>152.11 GB</td><td>92.9%</td><td>-3.8%</td><td>1:32:27</td><td>1390.62 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:55:24</td><td>09/09/2026 02:34:18</td><td>559.36 GB (.4%)</td><td>2227.29 GB</td><td>559.36 GB</td><td>74.89%</td><td>.33%</td><td>2:38:54</td><td>841.02 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:55:19</td><td>09/08/2026 01:48:27</td><td>159.54 GB (1.38%)</td><td>2203.35 GB</td><td>159.54 GB</td><td>92.76%</td><td>-.75%</td><td>1:53:08</td><td>1168.54 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>arihant</td><td>vikram</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:55:12</td><td>09/07/2026 01:08:43</td><td>72.13 GB (2.76%)</td><td>1993.31 GB</td><td>72.13 GB</td><td>96.38%</td><td>-10.21%</td><td>1:13:31</td><td>1626.82 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: ARYABHAT</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 21:55:21</td><td>09/13/2026 00:35:26</td><td>27.82 GB (8.89%)</td><td>2472.4 GB</td><td>27.82 GB</td><td>98.87%</td><td>-1.5%</td><td>2:40:05</td><td>926.67 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 21:55:26</td><td>09/12/2026 00:29:32</td><td>37.2 GB (6.61%)</td><td>2457.82 GB</td><td>37.2 GB</td><td>98.49%</td><td>-2.08%</td><td>2:34:06</td><td>956.97 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 21:55:18</td><td>09/11/2026 00:28:40</td><td>30.75 GB (7.98%)</td><td>2453.86 GB</td><td>30.75 GB</td><td>98.75%</td><td>-2.24%</td><td>2:33:22</td><td>960 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 21:55:09</td><td>09/10/2026 00:32:44</td><td>46.99 GB (5.32%)</td><td>2498.85 GB</td><td>46.99 GB</td><td>98.12%</td><td>-.45%</td><td>2:37:35</td><td>951.44 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:30:39</td><td>09/09/2026 02:36:05</td><td>567.13 GB (.44%)</td><td>2495.12 GB</td><td>567.13 GB</td><td>77.27%</td><td>-.6%</td><td>3:05:26</td><td>807.34 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 21:55:23</td><td>09/08/2026 00:40:58</td><td>47.17 GB (5.32%)</td><td>2510.13 GB</td><td>47.17 GB</td><td>98.12%</td><td>.77%</td><td>2:45:35</td><td>909.56 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>ambaddb1</td><td>aryabhat</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 21:55:22</td><td>09/07/2026 00:26:02</td><td>20.7 GB (11.83%)</td><td>2448.94 GB</td><td>20.7 GB</td><td>99.15%</td><td>-1.68%</td><td>2:30:40</td><td>975.24 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: MERCURY</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:35:04</td><td>09/13/2026 00:19:03</td><td>93.67 GB (4.97%)</td><td>4652.17 GB</td><td>93.67 GB</td><td>97.99%</td><td>-3.54%</td><td>0:43:59</td><td>6346.27 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:35:05</td><td>09/12/2026 00:19:00</td><td>84.78 GB (5.48%)</td><td>4649.23 GB</td><td>84.78 GB</td><td>98.18%</td><td>-3.6%</td><td>0:43:55</td><td>6351.9 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:35:05</td><td>09/11/2026 00:17:13</td><td>94.33 GB (4.93%)</td><td>4654.77 GB</td><td>94.33 GB</td><td>97.97%</td><td>-3.48%</td><td>0:42:08</td><td>6628.63 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 21:30:20</td><td>09/09/2026 23:51:59</td><td>1011.15 GB (.46%)</td><td>4665.07 GB</td><td>1011.15 GB</td><td>78.33%</td><td>-3.27%</td><td>2:21:39</td><td>1976.03 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:35:05</td><td>09/09/2026 00:21:12</td><td>121.07 GB (3.89%)</td><td>4707.7 GB</td><td>121.07 GB</td><td>97.43%</td><td>-2.39%</td><td>0:46:07</td><td>6124.95 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:35:05</td><td>09/08/2026 00:26:31</td><td>126.57 GB (3.73%)</td><td>4722.71 GB</td><td>126.57 GB</td><td>97.32%</td><td>-2.08%</td><td>0:51:26</td><td>5509.32 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>merc-dbpr</td><td>mercury</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:35:04</td><td>09/07/2026 00:09:56</td><td>30.01 GB (15.27%)</td><td>4580.99 GB</td><td>30.01 GB</td><td>99.34%</td><td>-5.01%</td><td>0:34:52</td><td>7883.16 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: KRISHNA</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:55:11</td><td>09/13/2026 00:33:23</td><td>43.44 GB (7.5%)</td><td>3258.28 GB</td><td>43.44 GB</td><td>98.67%</td><td>-1.41%</td><td>0:38:12</td><td>5117.71 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:55:04</td><td>09/12/2026 00:27:21</td><td>45.16 GB (7.17%)</td><td>3236.59 GB</td><td>45.16 GB</td><td>98.6%</td><td>-2.06%</td><td>0:32:17</td><td>6015.35 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:55:09</td><td>09/11/2026 00:29:15</td><td>52.11 GB (6.23%)</td><td>3247.83 GB</td><td>52.11 GB</td><td>98.4%</td><td>-1.72%</td><td>0:34:06</td><td>5714.65 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:55:12</td><td>09/10/2026 00:29:41</td><td>60.45 GB (5.39%)</td><td>3259.63 GB</td><td>60.45 GB</td><td>98.15%</td><td>-1.37%</td><td>0:34:29</td><td>5671.66 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:55:10</td><td>09/09/2026 00:34:04</td><td>64.24 GB (5.12%)</td><td>3287.14 GB</td><td>64.24 GB</td><td>98.05%</td><td>-.53%</td><td>0:38:54</td><td>5070.14 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 22:45:06</td><td>09/08/2026 00:18:44</td><td>727.74 GB (.45%)</td><td>3304.82 GB</td><td>727.74 GB</td><td>77.98%</td><td>.34%</td><td>1:33:38</td><td>2117.72 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kirshnadb-pr</td><td>krishna</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:55:04</td><td>09/07/2026 00:29:57</td><td>29.63 GB (10.86%)</td><td>3218.93 GB</td><td>29.63 GB</td><td>99.08%</td><td>-2.27%</td><td>0:34:53</td><td>5536.62 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: KUBER</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:58:05</td><td>09/13/2026 00:26:11</td><td>32.82 GB (7.94%)</td><td>2607.17 GB</td><td>32.82 GB</td><td>98.74%</td><td>-4.78%</td><td>0:28:06</td><td>5566.9 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:58:04</td><td>09/12/2026 00:27:46</td><td>48.95 GB (5.28%)</td><td>2582.61 GB</td><td>48.95 GB</td><td>98.1%</td><td>-5.68%</td><td>0:29:42</td><td>5217.39 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 21:30:08</td><td>09/10/2026 22:50:26</td><td>623.84 GB (.42%)</td><td>2598.51 GB</td><td>623.84 GB</td><td>75.99%</td><td>-5.09%</td><td>1:20:18</td><td>1941.6 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:58:05</td><td>09/10/2026 00:25:57</td><td>71.11 GB (3.69%)</td><td>2626.11 GB</td><td>71.11 GB</td><td>97.29%</td><td>-4.09%</td><td>0:27:52</td><td>5654.31 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:58:06</td><td>09/09/2026 00:35:49</td><td>125.81 GB (2.17%)</td><td>2736.03 GB</td><td>125.81 GB</td><td>95.4%</td><td>-.07%</td><td>0:37:43</td><td>4352.51 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:58:10</td><td>09/08/2026 00:29:10</td><td>86.1 GB (3.06%)</td><td>2637 GB</td><td>86.1 GB</td><td>96.73%</td><td>-3.69%</td><td>0:31:00</td><td>5103.88 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>kuber-db</td><td>kuber</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:58:04</td><td>09/07/2026 00:26:49</td><td>18.57 GB (13.82%)</td><td>2566.88 GB</td><td>18.57 GB</td><td>99.28%</td><td>-6.25%</td><td>0:28:45</td><td>5356.98 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: TIRUPATI</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:55:08</td><td>09/13/2026 00:19:55</td><td>29.11 GB (9.1%)</td><td>2648.03 GB</td><td>29.11 GB</td><td>98.9%</td><td>-7.94%</td><td>0:24:47</td><td>6410.84 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:55:11</td><td>09/12/2026 00:37:49</td><td>151.86 GB (1.89%)</td><td>2876.4 GB</td><td>151.86 GB</td><td>94.72%</td><td>4.36%</td><td>0:42:38</td><td>4048.1 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 21:30:09</td><td>09/10/2026 23:00:42</td><td>590.85 GB (.47%)</td><td>2756.24 GB</td><td>590.85 GB</td><td>78.56%</td><td>1.84%</td><td>1:30:33</td><td>1826.33 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:55:09</td><td>09/10/2026 00:26:09</td><td>80.16 GB (3.36%)</td><td>2689.53 GB</td><td>80.16 GB</td><td>97.02%</td><td>-.63%</td><td>0:31:00</td><td>5205.53 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:55:10</td><td>09/09/2026 00:23:12</td><td>59.53 GB (4.53%)</td><td>2697.07 GB</td><td>59.53 GB</td><td>97.79%</td><td>-.35%</td><td>0:28:02</td><td>5772.56 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:55:10</td><td>09/08/2026 00:23:03</td><td>60.75 GB (4.45%)</td><td>2700.96 GB</td><td>60.75 GB</td><td>97.75%</td><td>-.2%</td><td>0:27:53</td><td>5811.99 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>tirupatidb</td><td>tirupati</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:55:07</td><td>09/07/2026 00:25:39</td><td>24.52 GB (10.73%)</td><td>2630.99 GB</td><td>24.52 GB</td><td>99.07%</td><td>-2.79%</td><td>0:30:32</td><td>5170.06 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: NATRAJ</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:10:04</td><td>09/12/2026 23:28:45</td><td>31.81 GB (7.3%)</td><td>2322.55 GB</td><td>31.81 GB</td><td>98.63%</td><td>.05%</td><td>0:18:41</td><td>7458.67 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:10:04</td><td>09/11/2026 23:27:05</td><td>22.62 GB (10.11%)</td><td>2286.41 GB</td><td>22.62 GB</td><td>99.01%</td><td>-1.5%</td><td>0:17:01</td><td>8061.8 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:10:04</td><td>09/10/2026 23:27:07</td><td>22.92 GB (9.97%)</td><td>2285.76 GB</td><td>22.92 GB</td><td>99%</td><td>-1.53%</td><td>0:17:03</td><td>8043.75 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:10:05</td><td>09/09/2026 23:28:45</td><td>35.5 GB (6.5%)</td><td>2306.31 GB</td><td>35.5 GB</td><td>98.46%</td><td>-.65%</td><td>0:18:40</td><td>7413.13 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:10:04</td><td>09/08/2026 23:28:55</td><td>33.79 GB (6.86%)</td><td>2318.07 GB</td><td>33.79 GB</td><td>98.54%</td><td>-.14%</td><td>0:18:51</td><td>7378.48 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 21:30:07</td><td>09/07/2026 22:37:27</td><td>610 GB (.38%)</td><td>2311.79 GB</td><td>610 GB</td><td>73.61%</td><td>-.41%</td><td>1:07:20</td><td>2060.01 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>natraj-db</td><td>natraj</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:10:05</td><td>09/06/2026 23:25:55</td><td>13.65 GB (16.7%)</td><td>2278.99 GB</td><td>13.65 GB</td><td>99.4%</td><td>-1.82%</td><td>0:15:50</td><td>8636.16 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: INDRA</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 21:30:03</td><td>09/12/2026 22:06:40</td><td>491.09 GB (.34%)</td><td>1655.19 GB</td><td>491.09 GB</td><td>70.33%</td><td>-2.82%</td><td>0:36:37</td><td>2712.19 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:10:03</td><td>09/11/2026 23:22:17</td><td>35.73 GB (4.6%)</td><td>1644.91 GB</td><td>35.73 GB</td><td>97.83%</td><td>-3.43%</td><td>0:12:14</td><td>8067.69 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:10:03</td><td>09/10/2026 23:22:37</td><td>36.24 GB (4.57%)</td><td>1655.86 GB</td><td>36.24 GB</td><td>97.81%</td><td>-2.78%</td><td>0:12:34</td><td>7905.95 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:10:03</td><td>09/09/2026 23:26:07</td><td>112.05 GB (1.51%)</td><td>1695.29 GB</td><td>112.05 GB</td><td>93.39%</td><td>-.47%</td><td>0:16:04</td><td>6330.94 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:10:03</td><td>09/08/2026 23:26:57</td><td>85.14 GB (2%)</td><td>1703.28 GB</td><td>85.14 GB</td><td>95%</td><td>4.26%</td><td>0:16:54</td><td>6047.13 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:10:03</td><td>09/07/2026 23:25:08</td><td>67.31 GB (2.38%)</td><td>1603.04 GB</td><td>67.31 GB</td><td>95.8%</td><td>-1.87%</td><td>0:15:05</td><td>6376.72 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>indra-db-pr</td><td>indra</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 23:10:04</td><td>09/06/2026 23:22:19</td><td>79.45 GB (1.92%)</td><td>1525.32 GB</td><td>79.45 GB</td><td>94.79%</td><td>-6.63%</td><td>0:12:15</td><td>7470.95 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: PASHUPTI</td></tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/12/2026 23:10:04</td><td>09/12/2026 23:28:55</td><td>44.83 GB (5.33%)</td><td>2391.41 GB</td><td>44.83 GB</td><td>98.13%</td><td>-.06%</td><td>0:18:51</td><td>7611.91 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/11/2026 23:10:03</td><td>09/11/2026 23:27:29</td><td>41.53 GB (5.69%)</td><td>2364.67 GB</td><td>41.53 GB</td><td>98.24%</td><td>-1.18%</td><td>0:17:26</td><td>8138.46 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/10/2026 23:10:06</td><td>09/10/2026 23:28:33</td><td>54.4 GB (4.37%)</td><td>2377.31 GB</td><td>54.4 GB</td><td>97.71%</td><td>-.65%</td><td>0:18:27</td><td>7731.1 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/09/2026 23:10:05</td><td>09/09/2026 23:29:09</td><td>55.66 GB (4.28%)</td><td>2381.36 GB</td><td>55.66 GB</td><td>97.66%</td><td>-.48%</td><td>0:19:04</td><td>7493.79 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/08/2026 23:10:04</td><td>09/08/2026 23:29:50</td><td>76.34 GB (3.13%)</td><td>2388.31 GB</td><td>76.34 GB</td><td>96.8%</td><td>-.19%</td><td>0:19:46</td><td>7249.51 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/07/2026 23:10:04</td><td>09/07/2026 23:29:37</td><td>59.86 GB (3.99%)</td><td>2386.84 GB</td><td>59.86 GB</td><td>97.49%</td><td>-.25%</td><td>0:19:33</td><td>7325.35 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr style="background-color: #2e7d32; color: white;">
+<td>pr-db-pashupati</td><td>pashupti</td><td>N/A</td><td>SP_ArchiveLog_GT-Oracle</td><td>DB INCR</td><td>09/06/2026 21:30:03</td><td>09/06/2026 22:15:56</td><td>514.69 GB (.45%)</td><td>2329.64 GB</td><td>514.69 GB</td><td>77.91%</td><td>-2.64%</td><td>0:45:53</td><td>3046.39 GB/Hour</td><td>0</td><td>0</td><td>0</td>
+</tr>
+<tr><td colspan="17" style="background-color: #333; color: white; font-weight: bold;">Instance: </td></tr>
+<tr><td colspan="17" style="color: red;">Error connecting to . See log for details.</td></tr>
+</table>
+<div class="metrics">
+<h3>Report Metrics and Notes</h3>
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Total Instances Processed</td><td>15</td></tr>
+  <tr><td>Unique Instances Detected</td><td>14</td></tr>
+  <tr><td>Failed Instances (Connection Errors)</td><td>1</td></tr>
+  <tr><td>Total Backup Jobs</td><td>98</td></tr>
+  <tr><td>Completed Backup Jobs</td><td>98</td></tr>
+  <tr><td>Failed Backup Jobs</td><td>0</td></tr>
+  <tr><td>Running Backup Jobs</td><td>0</td></tr>
+  <tr><td>Total Failed Objects</td><td>0</td></tr>
+  <tr><td>Total Data Transferred (GB)</td><td>263890.21</td></tr>
+  <tr><td>Total Estimated Media Space (GB)</td><td>13397.39</td></tr>
+  <tr><td>Backup Success Rate (%)</td><td>100.00</td></tr>
+  <tr><td>Average Throughput per Job (GB/Hour)</td><td>2692.75</td></tr>
+</table>
+<h4>Notes:</h4>
+<ul>
+  <li><strong>Failed Jobs</strong>: Displayed in red (#ff0000) in the table above. Investigate failed jobs in V$RMAN_BACKUP_JOB_DETAILS for details.</li>
+  <li><strong>Failed Instances</strong>: Indicate connection issues. Check TNS configuration and credentials in /home/oracle/dbscript/credentials.txt.</li>
+  <li><strong>Running Jobs</strong>: Displayed in yellow (#ffff00), indicating ongoing backups. Monitor progress if needed.</li>
+  <li><strong>Data Size Change</strong>: Negative values indicate the current backup's data size (Data Transferred) is smaller than the previous completed backup, which is expected for incremental backups (DB INCR) as they only back up changed data. For example, -20.39% means the current backup is 20.39% smaller than the previous one.</li>
+  <li><strong>Unique Instances</strong>: If the number of unique instances is less than total instances, the TNS aliases in /home/oracle/dbscript/credentials.txt likely point to the same database instance. Verify /home/oracle/dbscript/credentials.txt and tnsnames.ora (typically in $ORACLE_HOME/network/admin) to ensure distinct SERVICE_NAME or SID for each instance.</li>
+  <li><strong>Data Transferred and Media Space</strong>: Reflect total input and output bytes across all jobs in the last 7 days.</li>
+  <li><strong>Success Rate</strong>: Percentage of completed jobs out of total jobs. Low rates may indicate systemic issues.</li>
+  <li><strong>Average Throughput</strong>: Calculated as total data transferred divided by total jobs, indicating backup efficiency.</li>
+  <li><strong>Log File</strong>: See /home/oracle/dbscript/dg_bkp_rpt/backup_report_20260913_0300.log for detailed execution logs and errors.</li>
+</ul>
+</div>
+</body>
+</html>
